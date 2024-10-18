@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 20%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозорий чорний фон для тексту */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.play-btn {
+    background-color: #FFCC00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+}
+
+.play-btn:hover {
+    background-color: #e6b800;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Classic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('image.png'); /* Шлях до зображення */
+            background-size: cover; /* Фонове зображення покриває всю сторінку */
+            background-position: center; /* Центрування зображення */
+            background-repeat: no-repeat; /* Без повторення */
+            height: 100vh; /* Задаємо висоту екрану */
+            overflow: hidden; /* Вимикаємо прокрутку, щоб не було зайвої смуги */
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 10%;
+            background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для контенту */
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .play-section {
+            margin-bottom: 40px;
+        }
+
+        .music-section {
+            margin-top: 20px; /* Зменшив відступ зверху */
+        }
+
+        .play-btn, .music-btn {
+            background-color: #FFCC00;
+            border: none;
+            padding: 15px 30px; /* Зменшено розмір кнопок */
+            font-size: 1.5em; /* Зменшено розмір тексту кнопок */
+            cursor: pointer;
+            color: #000;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .play-btn:hover, .music-btn:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Секція гри -->
+        <div class="play-section">
+            <h1>Ласкаво просимо до Minecraft Classic</h1>
+            <p>Зіграйте у класичну версію Minecraft прямо зараз!</p>
+            <button class="play-btn" onclick="window.location.href='https://classic.minecraft.net/'">Грати</button>
+        </div>
+
+        <!-- Секція музики -->
+        <div class="music-section">
+            <audio id="minecraftMusic" loop>
+                <source src="minecraft-music.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує елемент <code>audio</code>.
+            </audio>
+            <button class="music-btn" onclick="document.getElementById('minecraftMusic').play()">Грати музику</button>
+            <button class="music-btn" onclick="document.getElementById('minecraftMusic').pause()">Зупинити музику</button>
+        </div>
+    </div>
+</body>
+</html>
